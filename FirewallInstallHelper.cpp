@@ -35,7 +35,7 @@ UINT WINAPI SetMSIFirewallProperties( MSIHANDLE hModule )
     WCHAR* szFriendlyName = GetPropertyFromMSI( hModule, L"FriendlyNameForFirewall" );
     WCHAR* szRelativePath = GetPropertyFromMSI( hModule, L"RelativePathToExeForFirewall" );
     WCHAR* szProductCode = GetPropertyFromMSI( hModule, L"ProductCode" );
-    ////
+    //
     // See if the install location property is set.  If it is, use that.  
     // Otherwise, get the property from TARGETDIR
     bool bGotInstallDir = false;
